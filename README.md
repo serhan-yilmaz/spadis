@@ -1,2 +1,2 @@
-# spadis
-An algorithm for Selecting Predictive and DIverse SNPs in GWAS
+# SPADIS
+An algorithm for Selecting Predictive and Diverse SNPs in GWAS

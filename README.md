@@ -26,7 +26,7 @@ Simply run the demo file:
 demo.m
 ```
 
-In the provided examples, the genotype and flowering time phenotypes data of Arabidopsis Thaliana (AT) obtained from [Atwell et. al. (2010)](https://www.ncbi.nlm.nih.gov/pubmed/20336072) are used.
+In the provided examples, the genotype and flowering time phenotypes data of Arabidopsis Thaliana (AT) obtained from [Atwell et. al. (2010)](https://www.ncbi.nlm.nih.gov/pubmed/20336072) are used. For descriptions and format of the data, check the [readme file for data](data/readme_data.txt).
 
 ## License
 This project is licensed under GNU GPL v3 - see the [LICENSE.md](LICENSE.md) file for details.

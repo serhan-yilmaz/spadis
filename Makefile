@@ -3,9 +3,9 @@ MATLABDIR=
 
 CXXFLAGS=-Wall -O3 -g -Wno-deprecated -Wno-sign-compare -fopenmp -fPIC -std=c++11
 LDFLAGS=-lboost_program_options -lgomp
-VER=1.0
-SOURCEDIR=src/
-OBJECTDIR=obj/
+VER=1.00
+SOURCEDIR=src/cpp/
+OBJECTDIR=src/obj/
 BINARYDIR=binaries/
 BIN=spadis ${MEXOBJ}
 
@@ -14,7 +14,7 @@ BIN=spadis ${MEXOBJ}
 
 .PHONY: matlab
 
-all: $(BIN)
+matlab: .mkdir .mlab
 
 tgz: clean
 	mkdir -p spadis-${VER}/${SOURCEDIR} &&\
@@ -22,6 +22,7 @@ tgz: clean
 	cp -r ${SOURCEDIR}*.?pp ${SOURCEDIR}*.h spadis-${VER}/${SOURCEDIR} &&\
 	tar -czf spadis-${VER}.tgz spadis-${VER}&&\
 	rm -rf spadis-${VER}
+	
 clean:
 	rm -f $(BIN) ${OBJECTDIR}*.o .mlab .mkdir *.tgz
 
@@ -39,7 +40,7 @@ ${OBJECTDIR}optimizer.o: ${SOURCEDIR}Optimizer.cpp ${SOURCEDIR}Optimizer.h
 	${MATLABDIR}mex ${SOURCEDIR}matlab.cpp -output ${BINARYDIR}/spadis -v -g -O -largeArrayDims -lut "CXXFLAGS=\$$CXXFLAGS ${CXXFLAGS}" "LDFLAGS=\$$LDFLAGS ${LDFLAGS} ${OBJECTDIR}optimizer.o ${OBJECTDIR}options.o ${OBJECTDIR}graph.o ${OBJECTDIR}node.o -lgomp" \
 	&& touch .mlab
 
-matlab: .mkdir .mlab
+
 
 
 

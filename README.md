@@ -32,7 +32,7 @@ In the provided examples, the genotype and flowering time phenotypes data of Ara
 This project is licensed under GNU GPL v3 - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## References
-Yilmaz, Serhan, Tastan, Oznur & Cicek, A. Ercument (2018). [SPADIS: An Algorithm for Selecting Predictive and Diverse SNPs in GWAS](https://www.biorxiv.org/content/early/2018/01/30/256677). bioRxiv
+Yilmaz, Serhan, Tastan, Oznur & Cicek, A. Ercument (2018). [SPADIS: An Algorithm for Selecting Predictive and Diverse SNPs in GWAS](https://www.biorxiv.org/content/early/2018/05/17/256677). bioRxiv
 
 Atwell, S. et al. (2010) [Genome-wide association study of 107 phenotypes
 in Arabidopsis thaliana inbred lines](https://www.ncbi.nlm.nih.gov/pubmed/20336072). Nature, 465(7298), 627–631.
